@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Ferreira Cezar – TI, Redes e Telecom</title>
+  <meta name="description" content="Currículo e portfólio de Daniel Ferreira Cezar – Técnico de Redes e Telecom, experiência em ISP, FTTH/GPON, Mikrotik, IXC Provedor e automações em Python.">
+
+  <!-- Open Graph (quando compartilhar o link) -->
+  <meta property="og:title" content="Daniel Ferreira Cezar – TI, Redes e Telecom">
+  <meta property="og:description" content="Profissional de TI com experiência em provedor de internet, redes FTTH/GPON, Mikrotik, IXC Provedor e automações em Python.">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --bg: #020617;
+      --bg-soft: #0b1120;
+      --card: #020617;
+      --accent: #3b82f6;
+      --accent-soft: #1d4ed8;
+      --border: #1e293b;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #0f172a 0, #020617 45%, #000 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    header {
+      padding: 24px 0 16px;
+    }
+
+    .tagline {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .name {
+      font-size: 2.3rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+      gap: 24px;
+      align-items: flex-start;
+      margin-bottom: 32px;
+    }
+
+    .hero-card {
+      background: rgba(15,23,42,0.82);
+      border: 1px solid rgba(30,64,175,0.5);
+      border-radius: 16px;
+      padding: 18px 18px 16px;
+      box-shadow: 0 18px 45px rgba(15,23,42,0.85);
+      backdrop-filter: blur(14px);
+    }
+
+    .hero p {
+      font-size: 0.98rem;
+      color: #cbd5f5;
+      margin-bottom: 16px;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .chip {
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 32px;
+      background: rgba(15,118,255,0.12);
+      border: 1px solid rgba(59,130,246,0.5);
+      color: #bfdbfe;
+      white-space: nowrap;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 9px 16px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease, border-color 0.12s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+      color: #f9fafb;
+      box-shadow: 0 14px 30px rgba(37,99,235,0.45);
+      border-color: rgba(96,165,250,0.6);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 40px rgba(37,99,235,0.7);
+    }
+
+    .btn-ghost {
+      background: rgba(15,23,42,0.8);
+      border-color: var(--border);
+      color: var(--text);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(30,64,175,0.2);
+      border-color: rgba(96,165,250,0.7);
+    }
+
+    .contact-info {
+      font-size: 0.87rem;
+      color: var(--muted);
+      margin-top: 12px;
+    }
+
+    .contact-info div {
+      margin-bottom: 2px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,184,0.5);
+      background: rgba(15,23,42,0.85);
+      font-size: 0.78rem;
+      color: #cbd5f5;
+      margin-bottom: 8px;
+    }
+
+    .pill span {
+      font-size: 0.9rem;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr);
+      gap: 24px;
+    }
+
+    section {
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .card {
+      background: rgba(15,23,42,0.8);
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      padding: 14px 16px;
+    }
+
+    .card + .card {
+      margin-top: 10px;
+    }
+
+    .card-title {
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .card-subtitle {
+      font-size: 0.86rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .card ul {
+      list-style: none;
+      font-size: 0.9rem;
+      color: #d1d5db;
+    }
+
+    .card ul li {
+      margin-bottom: 4px;
+      padding-left: 14px;
+      position: relative;
+    }
+
+    .card ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #60a5fa;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 10px;
+    }
+
+    .skills-list {
+      list-style: none;
+      font-size: 0.9rem;
+      color: #e5e7eb;
+    }
+
+    .skills-list li {
+      margin-bottom: 4px;
+    }
+
+    .projects-list {
+      list-style: none;
+      font-size: 0.9rem;
+    }
+
+    .projects-list li {
+      margin-bottom: 8px;
+    }
+
+    .project-name {
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 32px;
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: center;
+      padding-top: 16px;
+      border-top: 1px solid rgba(30,41,59,0.8);
+    }
+
+    @media (max-width: 860px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <!-- Dados estruturados básicos -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Daniel Ferreira Cezar",
+    "jobTitle": "Técnico de Redes e Telecom",
+    "email": "mailto:danielprojetos059@gmail.com",
+    "telephone": "+55-11-98753-2795",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/daniel-ferreira-cezar-07b473224",
+      "https://github.com/dcezar286-art"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="tagline">Currículo &amp; Portfólio • TI, Redes e Telecom</div>
+      <div class="name">Daniel Ferreira Cezar</div>
+      <div class="subtitle">Técnico de Redes e Telecom • Suporte de TI • ISP / FTTH / GPON</div>
+
+      <div class="hero">
+        <div class="hero-card">
+          <p>
+            Profissional de TI com experiência prática em provedor de internet (ISP), redes FTTH/GPON,
+            Mikrotik, IXC Provedor e suporte técnico de campo e laboratório. Atuação em configuração
+            de OLT/ONT, VLANs, PPPoE, IPv4/IPv6, diagnóstico de rota e estabilidade de rede.
+          </p>
+
+          <div class="chips">
+            <span class="chip">FTTH / GPON</span>
+            <span class="chip">Mikrotik &amp; OLT</span>
+            <span class="chip">IXC Provedor</span>
+            <span class="chip">IPv4 / IPv6</span>
+            <span class="chip">Suporte Técnico N1/N2</span>
+            <span class="chip">Python &amp; Automação</span>
+          </div>
+
+          <div class="hero-actions">
+            <!-- Troque o href abaixo pelo link real do seu PDF se quiser -->
+            <a class="btn btn-primary"
+               href="curriculo-daniel-ferreira-cezar.pdf"
+               target="_blank"
+               rel="noopener">
+              📄 Baixar currículo em PDF profissional
+            </a>
+
+            <a class="btn btn-ghost"
+               href="https://wa.me/5511987532795?text=Ol%C3%A1%20Daniel%2C%20vi%20seu%20curr%C3%ADculo%20online%20e%20gostaria%20de%20conversar."
+               target="_blank"
+               rel="noopener">
+              💬 Falar comigo no WhatsApp
+            </a>
+          </div>
+
+          <div class="contact-info">
+            <div>📍 São Paulo/SP – Brasil</div>
+            <div>✉️ <a href="mailto:danielprojetos059@gmail.com">danielprojetos059@gmail.com</a></div>
+            <div>🔗 <a href="https://www.linkedin.com/in/daniel-ferreira-cezar-07b473224" target="_blank" rel="noopener">LinkedIn</a> •
+                <a href="https://github.com/dcezar286-art" target="_blank" rel="noopener">GitHub</a></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="pill">
+            <span>🛰</span> Setor de TI – INFRANET TELECOM (Registro: Auxiliar de Telecomunicações)
+          </div>
+          <p style="font-size:0.9rem; color:#cbd5f5; margin-bottom:10px;">
+            Hoje atuo no setor de TI e redes da Infranet Telecom, trabalhando com infraestrutura FTTH,
+            suporte a clientes e operação diária de provedor de internet.
+          </p>
+          <p style="font-size:0.85rem; color:var(--muted); margin-bottom:8px;">
+            Este currículo online foi pensado para recrutadores da área de TI, Redes e Telecom, com foco em provedores,
+            DTI e ambientes que valorizam experiência prática em campo e laboratório.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <!-- EXPERIÊNCIA -->
+        <section>
+          <h2>Experiência Profissional</h2>
+
+          <div class="card">
+            <div class="card-title">Técnico de Redes e Telecom (Setor de TI)</div>
+            <div class="card-subtitle">INFRANET TELECOM • Registro CLT: Auxiliar de Telecomunicações</div>
+            <ul>
+              <li>Atuação em ambiente de provedor de internet (ISP) com redes FTTH/GPON.</li>
+              <li>Provisionamento de ONTs (Nokia, Huawei, Intelbras, TP-Link, ZTE, FiberHome) e ajustes de Wi-Fi, NAT, firewall, ALG e IPTV.</li>
+              <li>Configuração de OLTs Mikrotik e V-SOL, perfis de velocidade, VLANs e autenticação PPPoE.</li>
+              <li>Diagnóstico de lentidão, perda de pacotes, rota internacional, latência e problemas de peering.</li>
+              <li>Monitoramento e gestão de clientes via IXC Provedor (sessões PPPoE, clientes offline, histórico de conexões).</li>
+              <li>Suporte técnico N1/N2 a clientes residenciais e corporativos, com foco em estabilidade e experiência do usuário.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section>
+          <h2>Projetos e Iniciativas</h2>
+
+          <div class="card">
+            <ul class="projects-list">
+              <li>
+                <span class="project-name">Planilha Financeira Inteligente 360° (Web App)</span><br>
+                Ferramenta online para organização financeira pessoal, gráficos automáticos e visão 360° do orçamento.
+              </li>
+              <li>
+                <span class="project-name">Painel de Vendas / Indicadores (estudo em HTML/JS)</span><br>
+                Protótipo de dashboard com gráficos e filtros para visualização de vendas e desempenho.
+              </li>
+              <li>
+                <span class="project-name">Scripts em Python para automação</span><br>
+                Automação de tarefas repetitivas, organização de dados e estudos de integração com serviços web.
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <div>
+        <!-- COMPETÊNCIAS -->
+        <section>
+          <h2>Competências Técnicas</h2>
+
+          <div class="card">
+            <div class="skills-grid">
+              <div>
+                <div class="card-title">Redes &amp; Telecom</div>
+                <ul class="skills-list">
+                  <li>FTTH / GPON</li>
+                  <li>OLT Mikrotik e V-SOL</li>
+                  <li>ONTs Nokia, Huawei, Intelbras, TP-Link, ZTE, FiberHome</li>
+                  <li>VLANs, PPPoE, IPv4 / IPv6</li>
+                  <li>Configuração de Wi-Fi, NAT, firewall, ALG, IPTV</li>
+                </ul>
+              </div>
+              <div>
+                <div class="card-title">Programação &amp; Automação</div>
+                <ul class="skills-list">
+                  <li>Python (automação e scripts)</li>
+                  <li>HTML5 e JavaScript</li>
+                  <li>Noções de SQL / Banco de Dados</li>
+                  <li>Excel (básico)</li>
+                </ul>
+              </div>
+              <div>
+                <div class="card-title">Ferramentas &amp; Plataformas</div>
+                <ul class="skills-list">
+                  <li>IXC Provedor</li>
+                  <li>WinBox / Mikrotik</li>
+                  <li>Angry IP Scanner, Advanced IP Scanner</li>
+                  <li>Apps de análise de Wi-Fi e testes de rede</li>
+                  <li>Visual Studio Code e ferramentas de TI em geral</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FORMAÇÃO -->
+        <section>
+          <h2>Formação &amp; Cursos</h2>
+
+          <div class="card">
+            <div class="card-title">Formação Acadêmica</div>
+            <div class="card-subtitle">Banco de Dados – Trancado no 4º semestre</div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">Cursos e Estudos</div>
+            <ul class="skills-list">
+              <li>Programação em Python – Udemy (cursando)</li>
+              <li>Algoritmos e Lógica de Programação</li>
+              <li>HTML5 e JavaScript (cursando)</li>
+              <li>Excel – nível básico</li>
+              <li>Redes de Computadores – conceitos gerais</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- PERFIL -->
+        <section>
+          <h2>Perfil Profissional</h2>
+          <div class="card">
+            <p style="font-size:0.9rem;">
+              Profissional pró-ativo, responsável e focado em resultado. Facilidade para aprendizado rápido,
+              resolução de problemas em situações de pressão (instabilidade de rede, reclamações de cliente),
+              boa comunicação com usuários finais e equipe técnica.
+              Comprometido com evolução constante na área de TI, Redes e Telecom, buscando sempre novas
+              tecnologias, certificações e boas práticas de mercado.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      Desenvolvido por Daniel Ferreira Cezar com apoio de ferramentas de IA — todo o conteúdo técnico foi compreendido, revisado e faz parte da minha experiência real.
+    </footer>
+  </div>
+</body>
+</html>
